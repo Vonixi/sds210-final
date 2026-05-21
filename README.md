@@ -18,8 +18,15 @@ The main goal is to understand how ZueriWieNeu reports are distributed across Zu
 
 Input files are stored in `data/`:
 
-- `stzh.zwn_meldungen_p.csv`: ZueriWieNeu point reports with timestamps, coordinates, issue categories, status, text fields, and report URLs.
-- `zh_neighbourhoods.gpkg`: Zurich statistical neighbourhood boundaries used for spatial joins and neighbourhood-level maps.
+- `stzh.zwn_meldungen_p.csv`  
+  ZueriWieNeu point reports containing timestamps, coordinates, issue categories, statuses, text fields, and report URLs.  
+  Source: [City of Zurich Open Data – ZueriWieNeu Dataset](https://data.stadt-zuerich.ch/dataset/geo_zueri_wie_neu)
+
+- `zh_neighbourhoods.gpkg`  
+  Zurich statistical neighbourhood boundaries used for spatial joins and neighbourhood-level analysis.  
+  Source: [City of Zurich Open Data – Statistical Neighbourhoods](https://data.stadt-zuerich.ch/dataset/geo_statistische_quartiere)
+
+All datasets remain publicly available through the City of Zurich Open Data Portal.
 
 The spatial workflow uses Swiss coordinates (`EPSG:2056`). Raw data are treated as read-only; cleaning, filtering, joining, and aggregation happen programmatically in the notebook.
 
