@@ -74,6 +74,5 @@ jupyter lab
 
 - Report coordinates are interpreted as Swiss LV95 coordinates (`EPSG:2056`).
 - Neighbourhood assignment is based on a point-in-polygon spatial join.
-- Response time is measured from `requested_datetime` to `updated_datetime`.
 - Strong wording is measured with a transparent keyword and punctuation proxy that was generated with the help of LLM ChatGPT-5.
 - Density is calculated as report count divided by neighbourhood area in square kilometres.
